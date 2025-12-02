@@ -8,7 +8,7 @@ now = datetime.datetime.now()
 
 AOC_YEAR = now.year
 DAY = now.day
-SESSION_COOKIE = "53616c7465645f5fb1fde2f60841122de56e14dc243f11c09f15dbf7f9044fde56552a3ab83e2da11af18c12da8a8656cdfb0586cb9dd09ce3062cd155860266"
+SESSION_COOKIE = "53616c7465645f5f03eeeacba6c44355d905edbcae34a27bd05d5873c3c38f4616f96f7e320c21523a7819a1cec5fce876726c8bd535d0bdc63e53e0853d8bc6"
 
 def download_aoc_input(year, day, session_cookie, save_path):
     """
