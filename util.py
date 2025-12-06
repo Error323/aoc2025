@@ -1,7 +1,8 @@
 from re import findall
 from collections import deque, defaultdict
 from heapq import heappush, heappop
-from functools import cache
+from functools import cache, reduce
+from operator import add, mul, sub
 import sys
 import math
 
