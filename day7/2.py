@@ -22,25 +22,6 @@ s = """
 s = open("input.txt").read()
 
 g, n, m = grid_from_string(s)
-ans = 0
-"""
-for i in range(n):
-    for j in range(m):
-        if g[i][j] == "S":
-            g[i+1][j] = "|"
-        elif g[i][j] == "^":
-            g[i][j-1] = "|"
-            g[i][j+1] = "|"
-        elif g[i][j] == "." and i > 0 and g[i-1][j] == "|":
-            g[i][j] = "|"
-
-for i in range(n):
-    for j in range(m):
-        if g[i][j] == "^" and g[i-1][j] == "|":
-            ans += 1
-        print(g[i][j], end='')
-    print()
-"""
 
 @cache
 def dfs(depth, n, m):
