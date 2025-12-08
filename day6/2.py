@@ -1,5 +1,4 @@
 from util import *
-import numpy as np
 
 s = """
 123 328  51 64 
