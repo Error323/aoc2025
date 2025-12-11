@@ -91,7 +91,7 @@ def astar(start, end, children, heuristic):
     is_end = end if callable(end) else lambda x: x == end
 
     while q:
-        _, node = heappop(pq)
+        _, node = heappop(q)
         cost = cost_so_far[node]
 
         if is_end(node):
